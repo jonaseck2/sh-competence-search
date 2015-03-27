@@ -1,0 +1,7 @@
+{ 
+	"name" : "xyz-nodejs",
+	"dependencies" : { 
+		"express": "^4.4.5"
+	},
+    "repository": {}
+}
