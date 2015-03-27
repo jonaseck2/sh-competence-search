@@ -1,1 +1,2 @@
-# sh-competence-search
+# sh-competence-search 
+Module for searching CV competences
