@@ -4,7 +4,7 @@ angular.module('myApp', []).filter('checkmark', function() {
   };
 });
 
-angular.module('myApp', []).controller('namesCtrl', function($scope) {
+angular.module('myApp', []).controller('searchCtrl', function($scope) {
     $scope.persons = [
         {name:'Jani',competence:'Java'},
         {name:'Hege',competence:'Javascript'},
