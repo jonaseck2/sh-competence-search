@@ -8,21 +8,21 @@
 
 <body>
 
-<div ng-app="myApp" ng-controller="namesCtrl">
+<div ng-app="myApp" ng-controller="searchCtrl">
 
   <div class="bar">
-    <!-- Create a binding between the searchString model and the text field -->
     <input type="text" ng-model="searchString" placeholder="Sok kompetens" />
   </div>
-  <ul>
-    <li ng-repeat="person in persons | filter:searchString ">
-      {{ person.name + ', ' + person.competence }}
-    </li>
-  </ul>
-
+  <div ng-show="searchString">
+    <ul>
+      <li ng-repeat="person in persons | filter: {competence : searchString} ">
+        {{ person.name + ', ' + person.competence }}
+      </li>
+    </ul>
+  </div>
 </div>
 
-<script src="js/namesController.js"></script>
+<script src="js/searchController.js"></script>
 
 </body>
 </html>
